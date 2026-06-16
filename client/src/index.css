@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  background: #0a0a0f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background: #0a0a0f;
+}
+
+button,
+a,
+input,
+textarea {
+  font: inherit;
+}
+
+.hero-gradient {
+  background:
+    linear-gradient(110deg, rgba(168, 85, 247, 0.16), transparent 35%),
+    linear-gradient(245deg, rgba(34, 211, 238, 0.14), transparent 40%),
+    radial-gradient(circle at 50% 0%, rgba(168, 85, 247, 0.18), transparent 35%),
+    #0a0a0f;
+  background-size: 220% 220%;
+}
+
+.glass-card {
+  background: rgba(17, 24, 39, 0.78);
+  border: 1px solid rgba(31, 41, 55, 0.95);
+  backdrop-filter: blur(18px);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #a855f7, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
