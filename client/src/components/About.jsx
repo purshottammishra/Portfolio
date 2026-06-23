@@ -47,12 +47,25 @@ function About() {
         >
           <div className="relative overflow-hidden rounded-xl border border-gray-800 bg-gray-900 p-8 shadow-glow">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-500/14 via-transparent to-cyan-400/14" />
-            <div className="relative flex aspect-square items-center justify-center rounded-xl border border-gray-800 bg-gray-950">
-              <div className="text-center">
-                <div className="mx-auto flex h-32 w-32 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-cyan-400 text-4xl font-black text-white">
-                  PM
+            <div className="relative flex aspect-square flex-col items-center justify-center rounded-xl border border-gray-800 bg-gray-950 p-6">
+              <div className="w-full max-w-xs text-center">
+                
+                <div className="mx-auto aspect-square w-[80%] overflow-hidden rounded-2xl border-4 border-gray-800 bg-gradient-to-r from-purple-500 to-cyan-400 shadow-glow">
+                  <img
+                    src="/profile-photo.jpg"
+                    alt="Purshottam Mishra"
+                    className="h-full w-full object-cover"
+                    onError={(event) => {
+                      event.currentTarget.style.display = 'none';
+                      event.currentTarget.nextElementSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="hidden h-full w-full items-center justify-center text-4xl font-black text-white">
+                    PM
+                  </div>
                 </div>
-                <p className="mt-6 text-lg font-bold text-white">MERN Stack Developer</p>
+                <p className="mt-7 text-2xl font-black text-white">Purshottam Mishra</p>
+                <p className="mt-2 text-base font-semibold text-cyan-400">MERN Stack Developer</p>
                 <p className="mt-2 text-sm text-gray-400">Lucknow, India</p>
               </div>
             </div>
